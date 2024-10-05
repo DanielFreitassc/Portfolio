@@ -18,21 +18,21 @@ export const Header = () => {
             <TabsTitle to={"works"}>
                 <ContentLink>
                     <LinkPurple>#</LinkPurple> 
-                    <LinkWhite>works</LinkWhite>
+                    <LinkWhite>Trabalhos</LinkWhite>
                 </ContentLink>
             </TabsTitle>
 
             <TabsTitle to={"about-me"}>
                 <ContentLink>
                     <LinkPurple>#</LinkPurple> 
-                    <LinkWhite>about-me</LinkWhite>
+                    <LinkWhite>sobre-mim</LinkWhite>
                 </ContentLink>
             </TabsTitle>
             
             <TabsTitle to={"contacts"}>
                 <ContentLink>
                     <LinkPurple>#</LinkPurple> 
-                    <LinkWhite>contacts</LinkWhite>
+                    <LinkWhite>contatos</LinkWhite>
                 </ContentLink>
             </TabsTitle>
         </ContainerHeader>
