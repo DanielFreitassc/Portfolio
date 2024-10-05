@@ -18,7 +18,10 @@ export const AboutDaniel = styled.div`
 export const AboutSubTitle = styled.p`
     color: #abb2bf;
 `
-export const ButtonContact = styled.button`
+export const ButtonContact = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 148px;
     height: 37px;
     background-color: transparent;
@@ -95,7 +98,7 @@ export const CurrentlyJob = styled.p`
 
 export const ProjectsContainer = styled.div`
     width: 100%;
-    max-width: 1980px;
+    max-width: 1920px;
     margin-top: 100px;
 `
 
@@ -137,8 +140,9 @@ export const CardGrid = styled.div`
 `
 
 export const ContainerSkills = styled.div`
+    width: 100%;
     margin-top: 100px;
-
+    max-width: 1920px;
 `
 export const ContentSkill = styled.div`
     border: 1px solid #abb2bf;
@@ -178,4 +182,89 @@ export const SecondarySkillsList = styled.div`
     width: 100%;
     gap: 20px;
     margin-top: 20px;
+`
+
+export const AboutMeContainer = styled.div`
+    margin-top: 100px;
+`
+
+export const SplitAbout = styled.div`
+    display: flex;
+    justify-content: space-arounds;
+`
+
+export const AboutTextArea = styled.div`
+    width: 500px;
+    color: #abb2bf;
+`
+
+export const ContentManTwo = styled.img`
+    margin-left: 160px;
+`
+
+export const AboutTitle = styled.h3`
+    margin: 40px 0;
+
+`
+
+export const AboutBodyText = styled.p`
+`
+
+export const AboutLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 148px;
+    height: 37px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #c778dd;
+    margin-top: 22px;
+`
+
+export const ContactContainer = styled.div`
+    width: 100%;
+    max-width: 1920px;
+`
+export const SplitContacts = styled.div`
+    display: flex;
+    
+`
+export const ContainerContentBodyText = styled.div`
+    margin-top: 50px;
+    margin-bottom: 145px;
+
+`
+export const ContentBodyText = styled.p`
+    width: 490px;
+    color: #abb2bf;
+
+`
+
+export const TitleContacts = styled.h3`
+    font-size: 1rem;
+    text-align: center;
+`
+
+export const ContentContacts = styled.div`
+    width: 350px;
+    height: 141px;
+    color: #abb2bf;
+    border: 1px solid #abb2bf;
+    padding: 10px;
+    margin-left: 200px;
+`
+export const ContactContent = styled(Link)`
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #abb2bf;
+    margin-top: 15px;
+`
+export const IconsContact = styled.p`
+    display: inline;
+    font-size: 1rem;
+    margin: 10px 10px 10px 20px;
 `
