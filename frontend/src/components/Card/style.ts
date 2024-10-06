@@ -37,6 +37,9 @@ export const RedirectToGithub = styled(Link)`
     font-size: 1rem;
     border: 1px solid #c778dd;
     margin-left: 20px;
+    &:hover {
+    background-color: rgba(199, 120, 221, 0.1);
+    }
 `
 export const TextTitle = styled.h2`
     font-size: 1.5rem;

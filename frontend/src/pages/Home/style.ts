@@ -52,6 +52,9 @@ export const ButtonContact = styled(Link)`
     font-size: 1rem;
     border: 1px solid #c778dd;
     margin-top: 22px;
+    &:hover {
+    background-color: rgba(199, 120, 221, 0.1);
+    }
 `
 export const JoinTitle = styled.div`
     display: flex;
@@ -355,6 +358,9 @@ export const AboutLink = styled(Link)`
     font-size: 1rem;
     border: 1px solid #c778dd;
     margin-top: 22px;
+    &:hover {
+    background-color: rgba(199, 120, 221, 0.1);
+    }
 `
 
 export const ContactContainer = styled.div`
