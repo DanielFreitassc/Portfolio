@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device } from "../../core/constants/Size";
 
 export const FooterContainer = styled.div`
     display: flex;
@@ -19,21 +20,35 @@ export const SplitMediaArea = styled.div`
 
 `
 export const ContactArea = styled.div`
-    width: 100%;
-    margin: 40px 370px 40px 176px;
-
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 40px 300px 40px 173px;
+    @media ${device.laptopL} { 
+        width: 390px;
+    }
 `
 export const DanielName = styled.p`
     font-size: 1.1rem;
+`
+
+export const IconContent = styled.p`
     display: inline;
-    margin: 5px;
+    font-size: 1.2rem;
+    padding: 2px;
+`
+
+export const NameRightContent = styled.p`
+    display: inline;
+    font-size: 1.2rem;
+    padding: 5px;
 `
 export const EmailContact = styled.p`
     color: #abb2bf;
     display: inline;
 `
 export const ContactMediaArea = styled.div`
-    width: 100%;
+    width: 500px;
     margin: 40px 176px;
 `
 
@@ -43,6 +58,10 @@ export const IconsArea = styled.div`
     justify-content: space-around;
     font-size: 1.5rem;
     padding: 5px;
+    @media ${device.laptopL} { 
+        width: 200px;
+        margin-left: 350px;
+    }
 `
 export const Copy = styled.p`
     color: #abb2bf;
@@ -51,7 +70,9 @@ export const MediaTitle = styled.p`
     font-size: 1.5rem;
     margin-left: 13px;
     margin-bottom: 10px;
-
+    @media ${device.laptopL} { 
+        margin-left: 350px;
+    }
 `
 
 export const LinkToSocialMedia = styled(Link)`

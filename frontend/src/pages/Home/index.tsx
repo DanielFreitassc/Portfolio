@@ -68,7 +68,8 @@ export const Home = () => {
                     <AboutDaniel>
                         <JoinTitle>
                             <ContentTitle>
-                                Daniel é um <StylePurpleInTitle>Dev Backend</StylePurpleInTitle> com Experiência em <StylePurpleInTitle>Infraestrutura</StylePurpleInTitle></ContentTitle>
+                                Daniel é um <StylePurpleInTitle>Dev Backend</StylePurpleInTitle> com Experiência em <StylePurpleInTitle>Infraestrutura</StylePurpleInTitle>
+                            </ContentTitle>
                         </JoinTitle>
 
                         <AboutSubTitle>
@@ -92,11 +93,11 @@ export const Home = () => {
                 </ContentAboutAndImage>
                 <ProjectsContainer>
                     <ContentLink>
-                        #<ProjectsLink>Projetos </ProjectsLink>----------------  <LinkToProjects to={"#"}>View all~~&gt;</LinkToProjects>
+                        #<ProjectsLink>Projetos </ProjectsLink>----------------  <LinkToProjects to={"#"}>Vert tudo~~&gt;</LinkToProjects>
                     </ContentLink>
-                    <CardGrid>
-                        <Card projeto={projetos}/>
-                    </CardGrid>
+                        <CardGrid>
+                            <Card projeto={projetos}/>
+                        </CardGrid>
                 </ProjectsContainer>
                 <ContainerSkills>
                     <ContentLink>
@@ -164,10 +165,12 @@ export const Home = () => {
                     <AboutTextArea>  
                             <AboutTitle>Olá, eu sou Daniel!</AboutTitle>
                             <AboutBodyText>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                Possimus dignissimos eum molestiae illum non facere esse voluptate
-                                vero nisi ipsum earum placeat quos sit voluptates excepturi adipisci,
-                                sequi soluta saepe.
+                            Sou estudante de Engenharia de Computação e,
+                            desde muito jovem, tenho um grande interesse
+                            por servidores. Atualmente, trabalho como estagiário na SATC,
+                            onde sou responsável pela infraestrutura e pelo backend de
+                            nossos sites. Tenho um forte interesse
+                            na área de DevSecOps.
                             <AboutLink to={"#"}>sobre</AboutLink>
                             </AboutBodyText>
                             

@@ -1,13 +1,16 @@
-import { ContainerHeader, ContentLink, ContentName, LinkPurple, LinkWhite, TabsTitle } from "./style"
+import { FaDev } from "react-icons/fa"
+import { ContainerHeader, ContentLink, ContentName, LinkPurple, LinkWhite, LogoName, NavBar, TabsTitle } from "./style"
 
 export const Header = () => {
     return(
         <ContainerHeader>
             <ContentName>
-                Daniel
+                <LogoName>
+                    <FaDev /> Daniel
+                </LogoName>
             </ContentName>
 
-
+            <NavBar>          
             <TabsTitle to={"home"}>
                 <ContentLink>
                     <LinkPurple>#</LinkPurple> 
@@ -35,6 +38,7 @@ export const Header = () => {
                     <LinkWhite>contatos</LinkWhite>
                 </ContentLink>
             </TabsTitle>
+            </NavBar>
         </ContainerHeader>
     )
 }

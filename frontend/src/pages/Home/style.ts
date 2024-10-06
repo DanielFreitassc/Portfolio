@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device } from "../../core/constants/Size";
 
 export const ContainerHome = styled.div`
     background-color: #282c33;
     width: 100%;
-    padding: 0 173px;
+    padding: 100px 173px;
 `
 export const ContentAboutAndImage = styled.div`
     display: flex;
@@ -14,9 +15,18 @@ export const AboutDaniel = styled.div`
     display: flex;
     flex-direction: column;
     width: 517px;
+    @media ${device.laptopL} {
+        width: 700px;
+    }
 `
 export const AboutSubTitle = styled.p`
     color: #abb2bf;
+    font-size: 1rem;
+    margin-top: 10px;
+    @media ${device.laptopL} {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
 `
 export const ButtonContact = styled(Link)`
     display: flex;
@@ -41,6 +51,10 @@ export const ContentTitle = styled.h1`
     color: white;
     display: inline;
     margin-top: 20px;
+
+    @media ${device.laptopL} {
+        font-size: 3rem;
+    }
 `
 export const StylePurpleInTitle = styled.p`
     color: #c778dd;
@@ -56,23 +70,39 @@ export const ContainerImageMan = styled.div`
     position: relative;
     width: 470px;
     height: 390px;
+
+    @media ${device.laptopL} {
+        margin-left: 280px;
+    }
 `
 export const ImageDots = styled.img`
     position: absolute;
     z-index: 9;
     left: 350px;
-    bottom: 60px;
+    bottom: 40px;
+    @media ${device.laptopL} {
+        width: 100px;
+        bottom: 30px;
+    }
 `
 export const ImageMan = styled.img`
     position: absolute;
     z-index: 2;
     left: 15px;
+    @media ${device.laptopL} {
+        width: 490px;
+        bottom: 1px;
+    }
 `
 export const ImageLogo = styled.img`
     position: absolute;
     z-index: 1;
     left: 20px;
     bottom: 150px;
+    @media ${device.laptopL} {
+        width: 180px;
+        bottom: 140px;
+    }
 `
 
 export const ContentCurrently = styled.div`
@@ -83,9 +113,12 @@ export const ContentCurrently = styled.div`
     gap: 10px;
     font-size: 1rem;
     width: 400px;
+
+    @media ${device.laptopL} {
+        margin-left: 310px;
+    }
 `
-export const BoxImage = styled.img`
-    
+export const BoxImage = styled.img` 
 `
 export const TextCurrently = styled.p`
     color: #abb2bf;
@@ -109,7 +142,7 @@ export const ContentLink = styled.div`
     font-size: 2rem;
     text-decoration: none;
     color: #c778dd;
-    display: inline;    
+    display: inline; 
 `
 export const CootainerSkillAndImg = styled.div`
     display: flex;
@@ -131,12 +164,21 @@ export const LinkToProjects = styled(Link)`
     font-size: 1rem;
     margin-left: 373px;
 
+    @media ${device.laptopL} {
+        margin-left: 780px; 
+    }
 `
+
 export const CardGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1920px;
+    display: flex;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    @media ${device.laptopL} {
+        justify-content: flex-end;
+        margin-right: 140px;
+    }
 `
 
 export const ContainerSkills = styled.div`
@@ -200,14 +242,27 @@ export const AboutTextArea = styled.div`
 
 export const ContentManTwo = styled.img`
     margin-left: 160px;
+    @media ${device.laptopL} {
+        width: 400px;
+        margin-left: 500px;
+        font-size: 2rem;
+    }
 `
 
 export const AboutTitle = styled.h3`
+    font-size: 1.5rem;
     margin: 40px 0;
-
+    @media ${device.laptopL} {
+        font-size: 2rem;
+    }
 `
 
 export const AboutBodyText = styled.p`
+    font-size: 1.1rem;
+    @media ${device.laptopL} {
+        font-size: 1.3rem;
+       
+    }
 `
 
 export const AboutLink = styled(Link)`
@@ -233,14 +288,17 @@ export const SplitContacts = styled.div`
     
 `
 export const ContainerContentBodyText = styled.div`
-    margin-top: 50px;
-    margin-bottom: 145px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 
 `
 export const ContentBodyText = styled.p`
+    font-size: 1.1rem;
     width: 490px;
     color: #abb2bf;
-
+    @media ${device.laptopL} { 
+        font-size: 1.3rem;
+    }
 `
 
 export const TitleContacts = styled.h3`
@@ -255,6 +313,11 @@ export const ContentContacts = styled.div`
     border: 1px solid #abb2bf;
     padding: 10px;
     margin-left: 200px;
+    margin-top: 30px;
+
+    @media ${device.laptopL} { 
+        margin-left: 550px;
+    }
 `
 export const ContactContent = styled(Link)`
     display: block;
