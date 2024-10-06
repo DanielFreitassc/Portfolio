@@ -6,6 +6,10 @@ export const ContainerHome = styled.div`
     background-color: #282c33;
     width: 100%;
     padding: 100px 173px;
+
+    @media ${device.mobileL} {
+        padding: 100px 20px;
+    }
     @media ${device.mobileM} {
         padding: 100px 20px;
     }
@@ -13,6 +17,11 @@ export const ContainerHome = styled.div`
 export const ContentAboutAndImage = styled.div`
     display: flex;
     align-items: flex-start;
+
+    @media ${device.mobileL} {
+        flex-direction: column;
+        align-items: center;
+    }
     @media ${device.mobileM} {
         flex-direction: column;
         align-items: center;
@@ -25,6 +34,9 @@ export const AboutDaniel = styled.div`
     @media ${device.laptopL} {
         width: 700px;
     }
+    @media ${device.mobileL} {
+       width: 400px;
+    }
     @media ${device.mobileM} {
         width: 300px;
     }
@@ -35,6 +47,9 @@ export const AboutSubTitle = styled.p`
     margin-top: 10px;
     @media ${device.laptopL} {
         font-size: 1.5rem;
+    }
+    @media ${device.mobileL} {
+       font-size: 1rem;
     }
     @media ${device.mobileM} {
         font-size: 1rem;
@@ -89,6 +104,9 @@ export const ContainerImageMan = styled.div`
     @media ${device.laptopL} {
         margin-left: 280px;
     }
+    @media ${device.mobileL} {
+       width: 400px;
+    }
     @media ${device.mobileM} {
         width: 350px;
     }
@@ -102,6 +120,10 @@ export const ImageDots = styled.img`
         width: 100px;
         bottom: 30px;
     }
+    @media ${device.mobileL} {
+        width: 50px;
+        left: 270px;
+    }
     @media ${device.mobileM} {
         width: 50px;
         left: 270px;
@@ -114,6 +136,11 @@ export const ImageMan = styled.img`
     @media ${device.laptopL} {
         width: 490px;
         bottom: 1px;
+    }
+    @media ${device.mobileL} {
+        bottom: 1px;
+        left: 0px;
+        width: 350px;
     }
     @media ${device.mobileM} {
         bottom: 1px;
@@ -129,6 +156,11 @@ export const ImageLogo = styled.img`
     @media ${device.laptopL} {
         width: 180px;
         bottom: 140px;
+    }
+    @media ${device.mobileL} {
+        width: 100px;
+        left: 10px;
+        bottom: 120px;
     }
     @media ${device.mobileM} {
         width: 100px;
@@ -148,6 +180,11 @@ export const ContentCurrently = styled.div`
 
     @media ${device.laptopL} {
         margin-left: 310px;
+    }
+    @media ${device.mobileL} {
+        width: 330px;
+        font-size: 0.9rem;
+        margin-right: 20px;
     }
     @media ${device.mobileM} {
        width: 330px;
@@ -183,6 +220,10 @@ export const ContentLink = styled.div`
 `
 export const LineDecoration = styled.div`
     display: inline;
+
+    @media ${device.mobileL} {
+        display: none;
+    }
     @media ${device.mobileM} {
         display: none;
     } 
@@ -190,6 +231,9 @@ export const LineDecoration = styled.div`
 export const CootainerSkillAndImg = styled.div`
     display: flex;
     justify-content: space-around;
+    @media ${device.mobileL} {
+        flex-direction: column;
+    }
     @media ${device.mobileM} {
         flex-direction: column;
     }
@@ -197,7 +241,9 @@ export const CootainerSkillAndImg = styled.div`
 export const ImageBoxes = styled.img`
     width: 349;
     object-fit: contain;
-
+    @media ${device.mobileL} {
+        display: none;
+    }
     @media ${device.mobileM} {
         display: none;
     }
@@ -217,6 +263,9 @@ export const LinkToProjects = styled(Link)`
     @media ${device.laptopL} {
         margin-left: 780px; 
     }
+    @media ${device.mobileL} {
+        margin-left: 30px;
+    }
     @media ${device.mobileM} {
         margin-left: 30px;
     }
@@ -231,6 +280,10 @@ export const CardGrid = styled.div`
     @media ${device.laptopL} {
         justify-content: flex-end;
         margin-right: 140px;
+    }
+    @media ${device.mobileL} {
+        flex-direction: column;
+        align-items: center;
     }
     @media ${device.mobileM} {
         flex-direction: column;
@@ -254,6 +307,9 @@ export const TitleSkill = styled.h3`
     font-weight: 300;
     border: 1px solid #abb2bf;
     padding: 4px;
+    @media ${device.mobileL} {
+        font-size: 0.9rem;
+    }
     @media ${device.mobileM} {
         font-size: 0.9rem;
     }
@@ -276,6 +332,9 @@ export const PrimaySkillsList = styled.div`
     width: 100%;
     gap: 20px;
     margin-top: 20px;
+    @media ${device.mobileL} {
+        gap: 10px;
+    }
     @media ${device.mobileM} {
         gap: 10px;
     }
@@ -285,6 +344,9 @@ export const SecondarySkillsList = styled.div`
     width: 100%;
     gap: 20px;
     margin-top: 20px;
+    @media ${device.mobileL} {
+        gap: 10px;
+    }
     @media ${device.mobileM} {
         gap: 10px;
     }
@@ -299,7 +361,9 @@ export const AboutMeContainer = styled.div`
 export const SplitAbout = styled.div`
     display: flex;
     justify-content: space-arounds;
-
+    @media ${device.mobileL} {
+        flex-direction: column;
+    }
     @media ${device.mobileM} {
         flex-direction: column;
     }
@@ -308,6 +372,9 @@ export const SplitAbout = styled.div`
 export const AboutTextArea = styled.div`
     width: 500px;
     color: #abb2bf;
+    @media ${device.mobileL} {
+        width: 100%;
+    }
     @media ${device.mobileM} {
         width: 100%;
     }
@@ -330,6 +397,9 @@ export const AboutTitle = styled.h3`
     @media ${device.laptopL} {
         font-size: 2rem;
     }
+    @media ${device.mobileL} {
+        font-size: 1rem;
+    }
     @media ${device.mobileM} {
         font-size: 1rem;
     }
@@ -339,6 +409,10 @@ export const AboutBodyText = styled.p`
     font-size: 1.1rem;
     @media ${device.laptopL} {
         font-size: 1.3rem;
+    }
+    @media ${device.mobileL} {
+        font-size: 1rem;
+        width: 360px;
     }
     @media ${device.mobileM} {
         font-size: 1rem;
@@ -369,6 +443,10 @@ export const ContactContainer = styled.div`
 `
 export const SplitContacts = styled.div`
     display: flex;
+    @media ${device.mobileL} {
+        flex-direction: column;
+        align-items: center;
+    }
     @media ${device.mobileM} {
         flex-direction: column;
         align-items: center;
@@ -386,6 +464,10 @@ export const ContentBodyText = styled.p`
     color: #abb2bf;
     @media ${device.laptopL} { 
         font-size: 1.3rem;
+    }
+    @media ${device.mobileL} {
+        font-size: 1rem;
+        width: 360px;
     }
     @media ${device.mobileM} {
         font-size: 1rem;
@@ -409,6 +491,9 @@ export const ContentContacts = styled.div`
 
     @media ${device.laptopL} { 
         margin-left: 550px;
+    }
+    @media ${device.mobileL} {
+        margin-right: 200px;
     }
     @media ${device.mobileM} {
         margin-right: 200px;

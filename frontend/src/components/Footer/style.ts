@@ -10,6 +10,9 @@ export const FooterContainer = styled.div`
     height: 210px;
     border-top: 1px solid #abb2bf;
     align-items: center;
+    @media ${device.mobileL} {
+        height: 400px;
+    }
     @media ${device.mobileM} {
         height: 400px;
     }
@@ -20,6 +23,10 @@ export const SplitMediaArea = styled.div`
     width: 100%;
     color: white;
     font-weight: 300;
+    @media ${device.mobileL} {
+        align-items: center;
+        flex-direction: column;
+    }
     @media ${device.mobileM} { 
         align-items: center;
         flex-direction: column;
@@ -32,6 +39,10 @@ export const ContactArea = styled.div`
     margin: 40px 300px 40px 173px;
     @media ${device.laptopL} { 
         width: 390px;
+    }
+    @media ${device.mobileL} {
+        width: 300px;
+        margin: 40px 0px;
     }
     @media ${device.mobileM} { 
         width: 300px;
@@ -60,6 +71,9 @@ export const EmailContact = styled.p`
 export const ContactMediaArea = styled.div`
     width: 500px;
     margin: 40px 176px;
+    @media ${device.mobileL} {
+        width: 300px;
+    }
     @media ${device.mobileM} { 
         width: 300px;
     }

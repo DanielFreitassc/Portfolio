@@ -15,6 +15,10 @@ export const ContentName = styled.div`
     font-size: 1.2rem;
     margin-top: 37px;
     margin-left: 173px;
+
+    @media ${device.mobileL} {
+        display: none;
+    }
     @media ${device.mobileM} {
         display: none;
     }
@@ -37,6 +41,9 @@ export const TabsTitle = styled(Link)`
     margin-bottom: 81px;
     @media ${device.laptopL} {
         font-size: 1.3rem;
+    }
+    @media ${device.mobileL} {
+        font-size: 0.9rem;
     }
     @media ${device.mobileM} {
         font-size: 0.8rem;
@@ -64,8 +71,12 @@ export const NavBar = styled.nav`
     justify-content: space-around;
     gap: 10px;
     margin-top: 37px;
+
     @media ${device.laptopL} {
         width: 700px;
+    }
+    @media ${device.mobileL} {
+        width: 500px;
     }
     @media ${device.mobileM} {
         width: 400px; 
