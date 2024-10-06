@@ -93,7 +93,7 @@ export const Home = () => {
                 </ContentAboutAndImage>
                 <ProjectsContainer>
                     <ContentLink>
-                        #<ProjectsLink>Projetos </ProjectsLink>----------------  <LinkToProjects to={"#"}>Vert tudo~~&gt;</LinkToProjects>
+                        #<ProjectsLink>Projetos </ProjectsLink>----------------  <LinkToProjects to={"#"}>Ver tudo~~&gt;</LinkToProjects>
                     </ContentLink>
                         <CardGrid>
                             <Card projeto={projetos}/>
