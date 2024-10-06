@@ -6,10 +6,17 @@ export const ContainerHome = styled.div`
     background-color: #282c33;
     width: 100%;
     padding: 100px 173px;
+    @media ${device.mobileM} {
+        padding: 100px 20px;
+    }
 `
 export const ContentAboutAndImage = styled.div`
     display: flex;
     align-items: flex-start;
+    @media ${device.mobileM} {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 export const AboutDaniel = styled.div`
     display: flex;
@@ -18,6 +25,9 @@ export const AboutDaniel = styled.div`
     @media ${device.laptopL} {
         width: 700px;
     }
+    @media ${device.mobileM} {
+        width: 300px;
+    }
 `
 export const AboutSubTitle = styled.p`
     color: #abb2bf;
@@ -25,7 +35,9 @@ export const AboutSubTitle = styled.p`
     margin-top: 10px;
     @media ${device.laptopL} {
         font-size: 1.5rem;
-        margin-top: 10px;
+    }
+    @media ${device.mobileM} {
+        font-size: 1rem;
     }
 `
 export const ButtonContact = styled(Link)`
@@ -74,6 +86,9 @@ export const ContainerImageMan = styled.div`
     @media ${device.laptopL} {
         margin-left: 280px;
     }
+    @media ${device.mobileM} {
+        width: 350px;
+    }
 `
 export const ImageDots = styled.img`
     position: absolute;
@@ -84,6 +99,10 @@ export const ImageDots = styled.img`
         width: 100px;
         bottom: 30px;
     }
+    @media ${device.mobileM} {
+        width: 50px;
+        left: 270px;
+    }
 `
 export const ImageMan = styled.img`
     position: absolute;
@@ -92,6 +111,11 @@ export const ImageMan = styled.img`
     @media ${device.laptopL} {
         width: 490px;
         bottom: 1px;
+    }
+    @media ${device.mobileM} {
+        bottom: 1px;
+        left: 0px;
+        width: 350px;
     }
 `
 export const ImageLogo = styled.img`
@@ -102,6 +126,11 @@ export const ImageLogo = styled.img`
     @media ${device.laptopL} {
         width: 180px;
         bottom: 140px;
+    }
+    @media ${device.mobileM} {
+        width: 100px;
+        left: 10px;
+        bottom: 120px;
     }
 `
 
@@ -116,6 +145,11 @@ export const ContentCurrently = styled.div`
 
     @media ${device.laptopL} {
         margin-left: 310px;
+    }
+    @media ${device.mobileM} {
+       width: 330px;
+       font-size: 0.9rem;
+       margin-right: 20px;
     }
 `
 export const BoxImage = styled.img` 
@@ -144,18 +178,31 @@ export const ContentLink = styled.div`
     color: #c778dd;
     display: inline; 
 `
+export const LineDecoration = styled.div`
+    display: inline;
+    @media ${device.mobileM} {
+        display: none;
+    } 
+`
 export const CootainerSkillAndImg = styled.div`
     display: flex;
     justify-content: space-around;
+    @media ${device.mobileM} {
+        flex-direction: column;
+    }
 `
 export const ImageBoxes = styled.img`
     width: 349;
     object-fit: contain;
+
+    @media ${device.mobileM} {
+        display: none;
+    }
 `
 export const ProjectsLink = styled.p`
     display: inline;
     color: white;
-
+    
 ` 
 
 export const LinkToProjects = styled(Link)`
@@ -166,6 +213,9 @@ export const LinkToProjects = styled(Link)`
 
     @media ${device.laptopL} {
         margin-left: 780px; 
+    }
+    @media ${device.mobileM} {
+        margin-left: 30px;
     }
 `
 
@@ -178,6 +228,10 @@ export const CardGrid = styled.div`
     @media ${device.laptopL} {
         justify-content: flex-end;
         margin-right: 140px;
+    }
+    @media ${device.mobileM} {
+        flex-direction: column;
+        align-items: center;
     }
 `
 
@@ -197,6 +251,9 @@ export const TitleSkill = styled.h3`
     font-weight: 300;
     border: 1px solid #abb2bf;
     padding: 4px;
+    @media ${device.mobileM} {
+        font-size: 0.9rem;
+    }
 `
 
 export const ListSkills = styled.ul`
@@ -206,38 +263,51 @@ export const ItemListSkills = styled.li`
     padding: 5px;
     color: #abb2bf;
     font-size: 1rem;
-
 `
 export const ExternalSkillsList = styled.div`
     display: flex;
     flex-direction: column;
-
 `
 export const PrimaySkillsList = styled.div`
     display: flex;
     width: 100%;
     gap: 20px;
     margin-top: 20px;
+    @media ${device.mobileM} {
+        gap: 10px;
+    }
 `
 export const SecondarySkillsList = styled.div`
     display: flex;
     width: 100%;
     gap: 20px;
     margin-top: 20px;
+    @media ${device.mobileM} {
+        gap: 10px;
+    }
 `
 
 export const AboutMeContainer = styled.div`
     margin-top: 100px;
+    @media ${device.mobileM} {
+    }
 `
 
 export const SplitAbout = styled.div`
     display: flex;
     justify-content: space-arounds;
+
+    @media ${device.mobileM} {
+        flex-direction: column;
+    }
 `
 
 export const AboutTextArea = styled.div`
     width: 500px;
     color: #abb2bf;
+    @media ${device.mobileM} {
+        width: 100%;
+    }
 `
 
 export const ContentManTwo = styled.img`
@@ -247,6 +317,8 @@ export const ContentManTwo = styled.img`
         margin-left: 500px;
         font-size: 2rem;
     }
+    @media ${device.mobileM} {
+    }
 `
 
 export const AboutTitle = styled.h3`
@@ -255,13 +327,19 @@ export const AboutTitle = styled.h3`
     @media ${device.laptopL} {
         font-size: 2rem;
     }
+    @media ${device.mobileM} {
+        font-size: 1rem;
+    }
 `
 
 export const AboutBodyText = styled.p`
     font-size: 1.1rem;
     @media ${device.laptopL} {
         font-size: 1.3rem;
-       
+    }
+    @media ${device.mobileM} {
+        font-size: 1rem;
+        width: 360px;
     }
 `
 
@@ -285,6 +363,10 @@ export const ContactContainer = styled.div`
 `
 export const SplitContacts = styled.div`
     display: flex;
+    @media ${device.mobileM} {
+        flex-direction: column;
+        align-items: center;
+    }
     
 `
 export const ContainerContentBodyText = styled.div`
@@ -298,6 +380,10 @@ export const ContentBodyText = styled.p`
     color: #abb2bf;
     @media ${device.laptopL} { 
         font-size: 1.3rem;
+    }
+    @media ${device.mobileM} {
+        font-size: 1rem;
+        width: 360px;
     }
 `
 
@@ -317,6 +403,9 @@ export const ContentContacts = styled.div`
 
     @media ${device.laptopL} { 
         margin-left: 550px;
+    }
+    @media ${device.mobileM} {
+        margin-right: 200px;
     }
 `
 export const ContactContent = styled(Link)`

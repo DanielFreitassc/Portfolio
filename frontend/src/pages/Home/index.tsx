@@ -34,6 +34,7 @@ import {
     ImageMan, 
     ItemListSkills, 
     JoinTitle, 
+    LineDecoration, 
     LinkToProjects, 
     ListSkills, 
     PrimaySkillsList, 
@@ -76,7 +77,7 @@ export const Home = () => {
                             Dedicado, focado em construir APIs de backend escaláveis 
                             e soluções eficientes.
                         </AboutSubTitle>
-                        <ButtonContact to={"#"}>Contate-me!!</ButtonContact>
+                        <ButtonContact to={"#"} target="_blank">Contate-me!!</ButtonContact>
                     </AboutDaniel>
 
                     <ContentContainerImageAndCurrently>
@@ -93,7 +94,7 @@ export const Home = () => {
                 </ContentAboutAndImage>
                 <ProjectsContainer>
                     <ContentLink>
-                        #<ProjectsLink>Projetos </ProjectsLink>----------------  <LinkToProjects to={"#"}>Ver tudo~~&gt;</LinkToProjects>
+                        #<ProjectsLink>Projetos </ProjectsLink><LineDecoration>----------------</LineDecoration><LinkToProjects to={"#"}>Ver tudo~~&gt;</LinkToProjects>
                     </ContentLink>
                         <CardGrid>
                             <Card projeto={projetos}/>
@@ -101,7 +102,7 @@ export const Home = () => {
                 </ProjectsContainer>
                 <ContainerSkills>
                     <ContentLink>
-                        #<ProjectsLink>Habilidades  </ProjectsLink>----------
+                        #<ProjectsLink>Habilidades  </ProjectsLink><LineDecoration>----------</LineDecoration>
                     </ContentLink>
                     <CootainerSkillAndImg>
 
@@ -158,7 +159,7 @@ export const Home = () => {
                 </ContainerSkills>
                 <AboutMeContainer>
                     <ContentLink>
-                        #<ProjectsLink>Sobre-mim  </ProjectsLink>-----------------
+                        #<ProjectsLink>Sobre-mim  </ProjectsLink><LineDecoration>-----------------</LineDecoration>
                     </ContentLink>
 
                     <SplitAbout>
@@ -171,7 +172,7 @@ export const Home = () => {
                             onde sou responsável pela infraestrutura e pelo backend de
                             nossos sites. Tenho um forte interesse
                             na área de DevSecOps.
-                            <AboutLink to={"#"}>sobre</AboutLink>
+                            <AboutLink to={"#"} target="_blank">sobre</AboutLink>
                             </AboutBodyText>
                             
                     </AboutTextArea>
@@ -194,7 +195,7 @@ export const Home = () => {
                         </ContainerContentBodyText>
                         <ContentContacts>
                             <TitleContacts> Me envie uma mensagem</TitleContacts>
-                            <ContactContent to={"https://www.linkedin.com/in/daniel-freitas-26a8a8267/"}target="_blank" ><IconsContact><FaLinkedin /></IconsContact>linkedin.com</ContactContent>
+                            <ContactContent to={"https://www.linkedin.com/in/daniel-freitas-26a8a8267/"} target="_blank"><IconsContact><FaLinkedin /></IconsContact>linkedin.com</ContactContent>
                            
                             <ContactContent to={"mailto:danielfreitassc@gmail.com"}><IconsContact><MdEmail /></IconsContact>danielfreitassc@gmail.com</ContactContent>
                         </ContentContacts>

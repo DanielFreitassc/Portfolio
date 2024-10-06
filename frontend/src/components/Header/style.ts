@@ -15,6 +15,9 @@ export const ContentName = styled.div`
     font-size: 1.2rem;
     margin-top: 37px;
     margin-left: 173px;
+    @media ${device.mobileM} {
+        display: none;
+    }
 `
 
 export const LogoName = styled.div`
@@ -35,7 +38,9 @@ export const TabsTitle = styled(Link)`
     @media ${device.laptopL} {
         font-size: 1.3rem;
     }
-   
+    @media ${device.mobileM} {
+        font-size: 0.8rem;
+    }
 `
 
 export const ContentLink = styled.div`
@@ -61,5 +66,8 @@ export const NavBar = styled.nav`
     margin-top: 37px;
     @media ${device.laptopL} {
         width: 700px;
+    }
+    @media ${device.mobileM} {
+        width: 400px; 
     }
 `

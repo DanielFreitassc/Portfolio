@@ -16,7 +16,7 @@ export const Card = ({projeto}: IProjeto) => {
                     <TextTitle>{item.title}</TextTitle>
                     <TextSubTitle>{item.description}</TextSubTitle>
                 </ContentTitleAndDescription>
-                <RedirectToGithub to={item.linkProject}>Ver Projeto</RedirectToGithub>
+                <RedirectToGithub to={item.linkProject} target="_blank">Ver Projeto</RedirectToGithub>
             </CardContainer>
             ))}
         </>
