@@ -50,7 +50,6 @@ import {
 } from "./style"
 
 import { Projeto } from "../../core/constants/Projetos"
-
 import Man from "../../assets/Man.png"
 import Dots from "../../assets/Dots.png"
 import Logo from "../../assets/Logo.png"
@@ -88,7 +87,7 @@ export const Home = () => {
                         </ContainerImageMan>
                         <ContentCurrently>
                             <BoxImage src={Box} alt="Caixa decorativa rosa" />
-                            <TextCurrently>Atuamente trabalhando em</TextCurrently><CurrentlyJob>LABTEC</CurrentlyJob>
+                            <TextCurrently>Atuamente trabalhando em</TextCurrently><CurrentlyJob>LABTEC/SATC</CurrentlyJob>
                         </ContentCurrently>
                     </ContentContainerImageAndCurrently>
                 </ContentAboutAndImage>
@@ -113,7 +112,7 @@ export const Home = () => {
                                     <TitleSkill>Linguagens</TitleSkill>
                                     <ListSkills>
                                         <ItemListSkills>Java </ItemListSkills>
-                                        <ItemListSkills>Javscript</ItemListSkills>
+                                        <ItemListSkills>Javascript</ItemListSkills>
                                         <ItemListSkills>Php</ItemListSkills>
                                         <ItemListSkills>Bash</ItemListSkills>
                                     </ListSkills>
@@ -166,9 +165,9 @@ export const Home = () => {
                     <AboutTextArea>  
                             <AboutTitle>Olá, eu sou Daniel!</AboutTitle>
                             <AboutBodyText>
-                            Sou estudante de Engenharia de Computação e,
+                            Sou estudante de Engenharia de Computação e
                             desde muito jovem, tenho um grande interesse
-                            por servidores. Atualmente, trabalho como estagiário na SATC,
+                            por servidores. Atualmente, trabalho como estagiário na SATC/LABTEC,
                             onde sou responsável pela infraestrutura e pelo backend de
                             nossos sites. Tenho um forte interesse
                             na área de DevSecOps.

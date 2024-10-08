@@ -93,7 +93,7 @@ export const ButtonContact = styled(Link)`
     color: white;
     font-size: 1rem;
     border: 1px solid #c778dd;
-    margin-top: 22px;
+    margin-top: 40px;
     &:hover {
     background-color: rgba(199, 120, 221, 0.1);
     }
@@ -289,6 +289,7 @@ export const ContentLink = styled.div`
     color: #c778dd;
     display: inline; 
 `
+
 export const LineDecoration = styled.div`
     display: inline;
     @media ${device.tablet} {
@@ -307,6 +308,7 @@ export const LineDecoration = styled.div`
 export const CootainerSkillAndImg = styled.div`
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
     @media ${device.tablet} {
         flex-direction: column;
     }
@@ -339,7 +341,6 @@ export const ImageBoxes = styled.img`
 export const ProjectsLink = styled.p`
     display: inline;
     color: white;
-    
 ` 
 
 export const LinkToProjects = styled(Link)`
@@ -369,7 +370,7 @@ export const CardGrid = styled.div`
     max-width: 1920px;
     display: flex;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 100px;
     justify-content: center;
     @media ${device.laptopL} {
         justify-content: flex-end;
@@ -440,7 +441,6 @@ export const PrimaySkillsList = styled.div`
     width: 100%;
     height: 280px;
     gap: 20px;
-    margin-top: 20px;
     @media ${device.tablet} {
         gap: 10px;
     }
@@ -475,7 +475,7 @@ export const SecondarySkillsList = styled.div`
 `
 
 export const AboutMeContainer = styled.div`
-    margin-top: 100px;
+    margin-top: 50px;
     @media ${device.mobileM} {
     }
 `
@@ -534,7 +534,7 @@ export const ContentManTwo = styled.img`
 
 export const AboutTitle = styled.h3`
     font-size: 1.5rem;
-    margin: 40px 0;
+    margin: 30px 0;
     @media ${device.laptopL} {
         font-size: 2rem;
     }
@@ -586,7 +586,7 @@ export const AboutLink = styled(Link)`
     color: white;
     font-size: 1rem;
     border: 1px solid #c778dd;
-    margin-top: 22px;
+    margin-top: 40px;
     &:hover {
     background-color: rgba(199, 120, 221, 0.1);
     }
