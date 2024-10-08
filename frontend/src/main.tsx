@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { GlobalStyles } from './styles/Global'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { Projects } from './pages/Projects'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,15 @@ const router = createBrowserRouter([
      <Header/>
      <Home/>
      <Footer/>
+    </>
+  },
+  {
+    path:"/projects",
+    element:
+    <>
+      <Header/>
+      <Projects/>
+      <Footer/>
     </>
   }
 ])

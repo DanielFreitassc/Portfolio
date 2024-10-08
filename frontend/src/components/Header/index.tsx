@@ -11,17 +11,17 @@ export const Header = () => {
             </ContentName>
 
             <NavBar>          
-            <TabsTitle to={"home"}>
+            <TabsTitle to={"/"}>
                 <ContentLink>
                     <LinkPurple>#</LinkPurple> 
                     <LinkWhite>home</LinkWhite>
                 </ContentLink>
             </TabsTitle>
    
-            <TabsTitle to={"works"}>
+            <TabsTitle to={"/projects"}>
                 <ContentLink>
                     <LinkPurple>#</LinkPurple> 
-                    <LinkWhite>Trabalhos</LinkWhite>
+                    <LinkWhite>Projetos</LinkWhite>
                 </ContentLink>
             </TabsTitle>
 
