@@ -24,7 +24,6 @@ export const ContentAboutAndImage = styled.div`
     align-items: flex-start;
 
     @media ${device.tablet} {
-        flex-direction: column;
         align-items: center;
     }
     @media ${device.mobileL} {
@@ -49,7 +48,8 @@ export const AboutDaniel = styled.div`
         width: 700px;
     }
     @media ${device.tablet} {
-        width: 400px;
+        width: 510px;
+        margin-right: 90px;
     }
     @media ${device.mobileL} {
        width: 400px;
@@ -128,11 +128,12 @@ export const ContainerImageMan = styled.div`
     width: 470px;
     height: 390px;
 
+
     @media ${device.laptopL} {
         margin-left: 280px;
     }
     @media ${device.tablet} {
-        width: 400px;
+        width: 390px;
     }
     @media ${device.mobileL} {
        width: 400px;
@@ -154,8 +155,8 @@ export const ImageDots = styled.img`
         bottom: 30px;
     }
     @media ${device.tablet} {
-        width: 50px;
-        left: 270px;
+        width: 70px;
+        left: 300px;
     }
     @media ${device.mobileL} {
         width: 50px;
@@ -180,7 +181,7 @@ export const ImageMan = styled.img`
     }
     @media ${device.tablet} {
         bottom: 1px;
-        left: 0px;
+        left: 40px;
         width: 350px;
     }
     @media ${device.mobileL} {
@@ -210,7 +211,7 @@ export const ImageLogo = styled.img`
     }
     @media ${device.tablet} {
         width: 100px;
-        left: 10px;
+        left: 50px;
         bottom: 120px;
     }
     @media ${device.mobileL} {
@@ -245,7 +246,7 @@ export const ContentCurrently = styled.div`
     @media ${device.tablet} {
         width: 330px;
         font-size: 0.9rem;
-        margin-right: 20px;
+        margin-left: 40px;
     }
     @media ${device.mobileL} {
         width: 330px;
@@ -293,7 +294,6 @@ export const ContentLink = styled.div`
 export const LineDecoration = styled.div`
     display: inline;
     @media ${device.tablet} {
-        display: none;
     }
     @media ${device.mobileL} {
         display: none;
@@ -310,7 +310,7 @@ export const CootainerSkillAndImg = styled.div`
     justify-content: space-around;
     margin-top: 50px;
     @media ${device.tablet} {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     @media ${device.mobileL} {
         flex-direction: column;
@@ -323,10 +323,11 @@ export const CootainerSkillAndImg = styled.div`
     }
 `
 export const ImageBoxes = styled.img`
-    width: 349;
+    width: 349px;
     object-fit: contain;
     @media ${device.tablet} {
-        display: none;
+        width: 300px;
+        margin-bottom: 50px;
     }
     @media ${device.mobileL} {
         display: none;
@@ -353,7 +354,7 @@ export const LinkToProjects = styled(Link)`
         margin-left: 780px; 
     }
     @media ${device.tablet} {
-        margin-left: 30px;
+        margin-left: 100px;
     }
     @media ${device.mobileL} {
         margin-left: 30px;
@@ -377,7 +378,6 @@ export const CardGrid = styled.div`
         margin-right: 140px;
     }
     @media ${device.tablet} {
-        flex-direction: column;
         align-items: center;
     }
     @media ${device.mobileL} {
@@ -498,28 +498,17 @@ export const SplitAbout = styled.div`
 `
 
 export const AboutTextArea = styled.div`
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     color: #abb2bf;
-    @media ${device.tablet} {
-        width: 100%;
-    }
-    @media ${device.mobileL} {
-        width: 100%;
-    }
-    @media ${device.mobileM} {
-        width: 100%;
-    }
-    @media ${device.mobileS} {
-        width: 100%;
-        padding: 10px;
-    }
 `
 
 export const ContentManTwo = styled.img`
     margin-left: 160px;
+
     @media ${device.tablet} {
         width: 400px;
-        margin-left: 500px;
+        margin-left: auto;
         font-size: 2rem;
     }
     @media ${device.laptopL} {
@@ -539,7 +528,7 @@ export const AboutTitle = styled.h3`
         font-size: 2rem;
     }
     @media ${device.tablet} {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     @media ${device.mobileL} {
         font-size: 1rem;
@@ -558,8 +547,8 @@ export const AboutBodyText = styled.p`
         font-size: 1.3rem;
     }
     @media ${device.tablet} {
-        font-size: 1rem;
-        width: 360px;
+        font-size: 1.3rem;
+        width: 500px;
     }
     @media ${device.mobileL} {
         font-size: 1rem;
@@ -599,8 +588,7 @@ export const ContactContainer = styled.div`
 export const SplitContacts = styled.div`
     display: flex;
     @media ${device.tablet} {
-        flex-direction: column;
-        align-items: center;
+
     }
     @media ${device.mobileL} {
         flex-direction: column;
@@ -619,7 +607,6 @@ export const SplitContacts = styled.div`
 export const ContainerContentBodyText = styled.div`
     margin-top: 30px;
     margin-bottom: 50px;
-
 `
 export const ContentBodyText = styled.p`
     font-size: 1.1rem;
@@ -629,8 +616,8 @@ export const ContentBodyText = styled.p`
         font-size: 1.3rem;
     }
     @media ${device.tablet} {
-        font-size: 1rem;
-        width: 360px;
+        font-size: 1.3rem;
+        width: 400px;
     }
     @media ${device.mobileL} {
         font-size: 1rem;
@@ -664,7 +651,7 @@ export const ContentContacts = styled.div`
         margin-left: 550px;
     }
     @media ${device.tablet} {
-        margin-right: 200px;
+        margin-left: auto;
     }
     @media ${device.mobileL} {
         margin-right: 200px;

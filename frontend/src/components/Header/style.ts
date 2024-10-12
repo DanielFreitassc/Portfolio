@@ -5,6 +5,7 @@ import { device } from "../../core/constants/Size";
 export const ContainerHeader = styled.div`
     width: 100%;
     display: flex;
+    justify-content: center;
     background-color: #282c33;
 `
 
