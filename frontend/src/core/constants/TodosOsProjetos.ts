@@ -2,6 +2,7 @@ import { IProjeto } from "../projeto/IProjeto";
 import Arq from "../../assets/arquitetura.png"
 import Frotas from "../../assets/frotas.jpg"
 import Market from "../../assets/market.jpg"
+import List from "../../assets/lista.jpg";
 export const  TodosOsProjeto:IProjeto = {
     projeto:[
         {    
@@ -27,6 +28,14 @@ export const  TodosOsProjeto:IProjeto = {
             title:"Marketplace",
             description:"API de Produtos para marketplace permite CRUD completo de produtos..",
             linkProject:"https://github.com/DanielFreitassc/Marketplace"
+        },
+        {    
+            id:4,
+            image:List,
+            skill: "Java Spring H2 Docker",
+            title:"Lista Telefônica",
+            description:"API de lista telefônica..",
+            linkProject:"https://github.com/DanielFreitassc/lista_telefonica_react_and_spring"
         }
     ]
     

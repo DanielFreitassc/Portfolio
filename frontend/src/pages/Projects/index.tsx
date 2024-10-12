@@ -2,7 +2,7 @@ import { Card } from "../../components/Card"
 import { ApisPequenas } from "../../core/constants/ApisPequenas";
 import { TodosOsProjeto } from "../../core/constants/TodosOsProjetos";
 import { ContentLink, ProjectsLink } from "../Home/style"
-import { ContainerApiSmall, ContainerProject, ContentsProjectsCards, SubTitle } from "./style"
+import { CardsAlls, ContainerApiSmall, ContainerProject, SubTitle } from "./style"
 
 export const Projects = () => {
     const projetos = TodosOsProjeto.projeto;
@@ -16,19 +16,19 @@ export const Projects = () => {
             <ContentLink>
                 #<ProjectsLink>Apis completas</ProjectsLink>
             </ContentLink>
-            <ContentsProjectsCards>
+            <CardsAlls>
                 <Card projeto={projetos}/>
-            </ContentsProjectsCards>
+            </CardsAlls>
             
             <ContainerApiSmall>
                 <ContentLink>
                     #<ProjectsLink>Apis pequenas</ProjectsLink>
                 </ContentLink>
-
-                <ContentsProjectsCards>
+            
+                <CardsAlls>
                     <Card projeto={projetos2}/>
-                </ContentsProjectsCards>
-
+                </CardsAlls>
+                
             </ContainerApiSmall>
         </ContainerProject>
     )

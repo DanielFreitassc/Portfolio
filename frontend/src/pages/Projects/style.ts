@@ -11,6 +11,7 @@ export const SubTitle = styled.p`
     margin-bottom: 80px;
 `
 export const ContentsProjectsCards = styled.div`
+    display: grid;
     max-width: 1920px;
     display: flex;
     gap: 20px;
@@ -20,4 +21,13 @@ export const ContentsProjectsCards = styled.div`
 
 export const ContainerApiSmall = styled.div`
     margin-top: 100px;
+
+`
+
+export const CardsAlls = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 98px auto;
+    max-width: 1366px;  
+    gap: 20px;
 `

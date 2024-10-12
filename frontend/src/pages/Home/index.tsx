@@ -156,7 +156,7 @@ export const Home = () => {
                         </ExternalSkillsList>
                     </CootainerSkillAndImg>
                 </ContainerSkills>
-                <AboutMeContainer>
+                <AboutMeContainer id="about-me">
                     <ContentLink>
                         #<ProjectsLink>Sobre-mim  </ProjectsLink><LineDecoration>-----------------</LineDecoration>
                     </ContentLink>
@@ -178,7 +178,7 @@ export const Home = () => {
                     <ContentManTwo src={ManTwo} alt="Homem com mão no rosto de capuz" />
                     </SplitAbout>
                 </AboutMeContainer>
-                <ContactContainer>
+                <ContactContainer id="contacts">
                     <ContentLink>
                         #<ProjectsLink>Contatos  </ProjectsLink>------
                     </ContentLink>
