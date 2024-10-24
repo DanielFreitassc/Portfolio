@@ -6,7 +6,9 @@ export const ContainerHome = styled.div`
     background-color: #282c33;
     width: 100%;
     padding: 100px 173px;
-   
+    @media ${device.laptopL} {
+        padding: 100px 100px 100px 200px;
+    }
     @media ${device.tablet} {
         padding: 100px 20px;
     }
@@ -25,7 +27,6 @@ export const ContentAboutAndImage = styled.div`
     align-items: flex-start;
     @media ${device.desktop} {
         width: 100%;
-        border: 1px solid red;
     }
     @media ${device.tablet} {
         align-items: center;
@@ -48,9 +49,7 @@ export const AboutDaniel = styled.div`
     flex-direction: column;
     width: 517px;
     @media ${device.desktop} {
-        width: 1400px;
-        border: 1px solid red;
-        
+        width: 1400px;        
     }
     @media ${device.laptopL} {
         width: 700px;
@@ -79,7 +78,7 @@ export const AboutSubTitle = styled.p`
     margin-top: 10px;
     @media ${device.desktop} {
         font-size: 2rem;
-        border: 1px solid red;
+        width: 900px;
     }
     @media ${device.desktopS} {
         font-size: 1.5rem;
@@ -112,7 +111,11 @@ export const ButtonContact = styled(Link)`
     font-size: 1rem;
     border: 1px solid #c778dd;
     margin-top: 40px;
-    
+    @media ${device.desktop} {
+        font-size: 1.2rem;
+        width: 200px;
+        height: 50px;
+    }
     &:hover {
     background-color: rgba(199, 120, 221, 0.1);
     }
@@ -182,7 +185,7 @@ export const ImageDots = styled.img`
     left: 350px;
     bottom: 40px;
     @media ${device.desktop} {
-        width: 80px;
+        width: 100px;
         left: 270px;
     }
     @media ${device.laptopL} {
@@ -212,7 +215,7 @@ export const ImageMan = styled.img`
         height: 400px;
         z-index: 2;
     @media ${device.desktop} {
-        height: 480px;
+        height: 500px;
         bottom: 1px;
     }
     @media ${device.laptopL} {
@@ -457,9 +460,11 @@ export const CardGrid = styled.div`
     @media ${device.desktop} {
         margin-left: 910px;
     }
+    @media ${device.desktopS} {
+    }
     @media ${device.laptopL} {
         justify-content: flex-end;
-        margin-right: 150px;
+        margin-right: 160px;
     }
     @media ${device.tablet} {
         align-items: center;
@@ -522,7 +527,9 @@ export const ItemListSkills = styled.li`
 export const ExternalSkillsList = styled.div`
     display: flex;
     flex-direction: column;
-    
+    @media ${device.desktopS} {
+        margin-left: 40px;
+    }
     @media ${device.desktop}{
         margin-left: 950px;
     }
@@ -532,6 +539,7 @@ export const PrimaySkillsList = styled.div`
     width: 100%;
     height: 280px;
     gap: 20px;
+ 
     @media ${device.tablet} {
         gap: 10px;
     }
@@ -610,7 +618,7 @@ export const ContentManTwo = styled.img`
     }
     @media ${device.laptopL} {
         width: 400px;
-        margin-left: 500px;
+        margin-left: 550px;
         font-size: 2rem;
     }
     @media ${device.mobileS} {
@@ -714,6 +722,9 @@ export const ContentBodyText = styled.p`
     font-size: 1.1rem;
     width: 490px;
     color: #abb2bf;
+    @media ${device.desktop} { 
+        font-size: 1.3rem;
+    }
     @media ${device.laptopL} { 
         font-size: 1.3rem;
     }
@@ -751,8 +762,11 @@ export const ContentContacts = styled.div`
     @media ${device.desktop} {
         margin-left: 1100px;
     }
+    @media ${device.desktopS} {
+        margin-left: 165px;
+    }
     @media ${device.laptopL} { 
-        margin-right: 0px;
+        margin-left: 310px;
     }
     @media ${device.tablet} {
         margin-left: auto;
