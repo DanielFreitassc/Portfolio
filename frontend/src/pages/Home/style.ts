@@ -22,7 +22,6 @@ export const ContainerHome = styled.div`
 export const ContentAboutAndImage = styled.div`
     display: flex;
     align-items: flex-start;
-
     @media ${device.tablet} {
         align-items: center;
     }
@@ -43,9 +42,12 @@ export const AboutDaniel = styled.div`
     display: flex;
     flex-direction: column;
     width: 517px;
-
     @media ${device.laptopL} {
         width: 700px;
+        
+    }
+    @media ${device.desktopS} {
+        width: 900px;
     }
     @media ${device.tablet} {
         width: 510px;
@@ -65,7 +67,9 @@ export const AboutSubTitle = styled.p`
     color: #abb2bf;
     font-size: 1rem;
     margin-top: 10px;
-
+    @media ${device.desktopS} {
+        font-size: 1.5rem;
+    }
     @media ${device.laptopL} {
         font-size: 1.5rem;
     }
@@ -94,23 +98,24 @@ export const ButtonContact = styled(Link)`
     font-size: 1rem;
     border: 1px solid #c778dd;
     margin-top: 40px;
+    
     &:hover {
     background-color: rgba(199, 120, 221, 0.1);
     }
 `
 export const JoinTitle = styled.div`
     display: flex;
-  
 `
 export const ContentTitle = styled.h1`
-    font-size: 2rem;
     font-weight: 400;
     color: white;
     display: inline;
     margin-top: 20px;
-
     @media ${device.laptopL} {
         font-size: 3rem;
+    }
+    @media ${device.desktopS} {
+       font-size: 3rem;
     }
 `
 export const StylePurpleInTitle = styled.p`
@@ -121,19 +126,21 @@ export const ContentContainerImageAndCurrently = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media ${device.desktopS} {
+        width: 500px;
+    }
 `
 
 export const ContainerImageMan = styled.div`
     position: relative;
     width: 470px;
     height: 390px;
-
-
+    
     @media ${device.laptopL} {
         margin-left:280px;
     }
     @media ${device.desktopS} {
-        margin-left: 280px;
+        margin-left:150px;
     }
     @media ${device.tablet} {
         width: 390px;
@@ -163,7 +170,7 @@ export const ImageDots = styled.img`
     }
     @media ${device.mobileL} {
         width: 50px;
-        left: 270px;
+        left: 290px;
     }
     @media ${device.mobileM} {
         width: 50px;
@@ -179,12 +186,11 @@ export const ImageMan = styled.img`
         position: absolute;
         height: 400px;
         z-index: 2;
-  
+        
     @media ${device.laptopL} {
         height: 500px;
         bottom: 1px;
         left: 60px;
-
     }
     @media ${device.desktopS} {
     height: 500px;
@@ -206,12 +212,12 @@ export const ImageMan = styled.img`
     @media ${device.mobileL} {
         
         bottom: 1px;
-        left: 0px;
+        left: 12px;
         width: 350px;
     }
     @media ${device.mobileM} {
         bottom: 1px;
-        left: 0px;
+        right: 10px;
         width: 350px;
     }
     @media ${device.mobileS} {
@@ -225,6 +231,7 @@ export const ImageLogo = styled.img`
     z-index: 1;
     left: 20px;
     bottom: 150px;
+    
     @media ${device.laptopL} {
         width: 180px;
         bottom: 140px;
@@ -240,7 +247,7 @@ export const ImageLogo = styled.img`
     }
     @media ${device.mobileL} {
         width: 100px;
-        left: 10px;
+        left: 40px;
         bottom: 120px;
     }
     @media ${device.mobileM} {
@@ -263,7 +270,10 @@ export const ContentCurrently = styled.div`
     gap: 10px;
     font-size: 1rem;
     width: 400px;
-
+    @media ${device.desktopS} {
+        width: 400px;
+        margin-right: 100px;
+    }
     @media ${device.laptopL} {
         margin-left: 310px;
     }
@@ -306,6 +316,7 @@ export const ProjectsContainer = styled.div`
     width: 100%;
     max-width: 1920px;
     margin-top: 100px;
+    
 `
 
 export const ContentLink = styled.div`
@@ -571,6 +582,9 @@ export const AboutTitle = styled.h3`
 export const AboutBodyText = styled.p`
     font-size: 1.1rem;
     @media ${device.laptopL} {
+        font-size: 1.3rem;
+    }
+    @media ${device.desktopS} {
         font-size: 1.3rem;
     }
     @media ${device.tablet} {

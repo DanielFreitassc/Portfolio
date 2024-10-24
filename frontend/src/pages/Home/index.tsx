@@ -62,6 +62,7 @@ import { FaLinkedin } from "react-icons/fa"
 
 export const Home = () => {
     const projetos = Projeto.projeto;
+    
     return(
         <ContainerHome>
                 <ContentAboutAndImage>
@@ -76,7 +77,7 @@ export const Home = () => {
                             Dedicado, focado em construir APIs de backend escaláveis 
                             e soluções eficientes.
                         </AboutSubTitle>
-                        <ButtonContact to={"#"} target="_blank">Contate-me!!</ButtonContact>
+                        <ButtonContact to={"#contacts"}>Contate-me!!</ButtonContact>
                     </AboutDaniel>
 
                     <ContentContainerImageAndCurrently>
