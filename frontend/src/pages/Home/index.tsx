@@ -50,9 +50,9 @@ import {
 } from "./style"
 
 import { Projeto } from "../../core/constants/Projetos"
-import Man from "../../assets/Man.png"
+import Man from "../../assets/daniel.png"
 import Dots from "../../assets/Dots.png"
-import Logo from "../../assets/Logo.png"
+import Logo from "../../assets/Fundo.png"
 import Box from "../../assets/Rectangle.png"
 import DotsAndBoxes from "../../assets/Group.png"
 import { Card } from "../../components/Card"

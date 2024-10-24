@@ -130,6 +130,9 @@ export const ContainerImageMan = styled.div`
 
 
     @media ${device.laptopL} {
+        margin-left:280px;
+    }
+    @media ${device.desktopS} {
         margin-left: 280px;
     }
     @media ${device.tablet} {
@@ -172,19 +175,36 @@ export const ImageDots = styled.img`
     }
 `
 export const ImageMan = styled.img`
-    position: absolute;
-    z-index: 2;
-    left: 15px;
+        object-fit: contain;
+        position: absolute;
+        height: 400px;
+        z-index: 2;
+  
     @media ${device.laptopL} {
-        width: 490px;
+        height: 500px;
+        bottom: 1px;
+        left: 60px;
+
+    }
+    @media ${device.desktopS} {
+    height: 500px;
+    bottom: 1px;
+    left: 60px;
+
+    }
+    @media ${device.laptop} {
+        left: 40px;
+        height: 500px;
         bottom: 1px;
     }
     @media ${device.tablet} {
+
         bottom: 1px;
         left: 40px;
         width: 350px;
     }
     @media ${device.mobileL} {
+        
         bottom: 1px;
         left: 0px;
         width: 350px;
@@ -206,6 +226,10 @@ export const ImageLogo = styled.img`
     left: 20px;
     bottom: 150px;
     @media ${device.laptopL} {
+        width: 180px;
+        bottom: 140px;
+    }
+    @media ${device.desktopS} {
         width: 180px;
         bottom: 140px;
     }
@@ -241,6 +265,9 @@ export const ContentCurrently = styled.div`
     width: 400px;
 
     @media ${device.laptopL} {
+        margin-left: 310px;
+    }
+    @media ${device.desktopS} {
         margin-left: 310px;
     }
     @media ${device.tablet} {
@@ -375,7 +402,7 @@ export const CardGrid = styled.div`
     justify-content: center;
     @media ${device.laptopL} {
         justify-content: flex-end;
-        margin-right: 140px;
+        margin-right: 150px;
     }
     @media ${device.tablet} {
         align-items: center;
