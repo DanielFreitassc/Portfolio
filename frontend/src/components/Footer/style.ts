@@ -10,6 +10,8 @@ export const FooterContainer = styled.div`
     height: 210px;
     border-top: 1px solid #abb2bf;
     align-items: center;
+
+   
     @media ${device.tablet} {
         height: 400px;
     }
@@ -29,6 +31,7 @@ export const SplitMediaArea = styled.div`
     width: 100%;
     color: white;
     font-weight: 300;
+
     @media ${device.tablet} {
         align-items: center;
         flex-direction: column;
@@ -93,6 +96,11 @@ export const EmailContact = styled.p`
 export const ContactMediaArea = styled.div`
     width: 500px;
     margin: 40px 176px;
+
+    @media ${device.desktop} {
+        width: 300px;
+        margin-left: 800px;
+    }
     @media ${device.tablet} {
         width: 300px;
     }
@@ -113,6 +121,7 @@ export const IconsArea = styled.div`
     justify-content: space-around;
     font-size: 1.5rem;
     padding: 5px;
+    
     @media ${device.laptopL} { 
         width: 200px;
         margin-left: 350px;

@@ -6,6 +6,7 @@ export const ContainerHome = styled.div`
     background-color: #282c33;
     width: 100%;
     padding: 100px 173px;
+   
     @media ${device.tablet} {
         padding: 100px 20px;
     }
@@ -22,6 +23,10 @@ export const ContainerHome = styled.div`
 export const ContentAboutAndImage = styled.div`
     display: flex;
     align-items: flex-start;
+    @media ${device.desktop} {
+        width: 100%;
+        border: 1px solid red;
+    }
     @media ${device.tablet} {
         align-items: center;
     }
@@ -42,6 +47,11 @@ export const AboutDaniel = styled.div`
     display: flex;
     flex-direction: column;
     width: 517px;
+    @media ${device.desktop} {
+        width: 1400px;
+        border: 1px solid red;
+        
+    }
     @media ${device.laptopL} {
         width: 700px;
         
@@ -67,6 +77,10 @@ export const AboutSubTitle = styled.p`
     color: #abb2bf;
     font-size: 1rem;
     margin-top: 10px;
+    @media ${device.desktop} {
+        font-size: 2rem;
+        border: 1px solid red;
+    }
     @media ${device.desktopS} {
         font-size: 1.5rem;
     }
@@ -111,6 +125,10 @@ export const ContentTitle = styled.h1`
     color: white;
     display: inline;
     margin-top: 20px;
+    @media ${device.desktop} {
+        font-size: 4rem;
+        width: 900px;
+    }
     @media ${device.laptopL} {
         font-size: 3rem;
     }
@@ -126,6 +144,7 @@ export const ContentContainerImageAndCurrently = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     @media ${device.desktopS} {
         width: 500px;
     }
@@ -135,7 +154,9 @@ export const ContainerImageMan = styled.div`
     position: relative;
     width: 470px;
     height: 390px;
-    
+    @media ${device.desktop} {
+        margin-right: 100px;
+    }
     @media ${device.laptopL} {
         margin-left:280px;
     }
@@ -160,6 +181,10 @@ export const ImageDots = styled.img`
     z-index: 9;
     left: 350px;
     bottom: 40px;
+    @media ${device.desktop} {
+        width: 80px;
+        left: 270px;
+    }
     @media ${device.laptopL} {
         width: 100px;
         bottom: 30px;
@@ -186,7 +211,10 @@ export const ImageMan = styled.img`
         position: absolute;
         height: 400px;
         z-index: 2;
-        
+    @media ${device.desktop} {
+        height: 480px;
+        bottom: 1px;
+    }
     @media ${device.laptopL} {
         height: 500px;
         bottom: 1px;
@@ -200,11 +228,9 @@ export const ImageMan = styled.img`
     }
     @media ${device.laptop} {
         left: 40px;
-        height: 500px;
-        bottom: 1px;
+        height: 500px;  
     }
     @media ${device.tablet} {
-
         bottom: 1px;
         left: 40px;
         width: 350px;
@@ -231,7 +257,10 @@ export const ImageLogo = styled.img`
     z-index: 1;
     left: 20px;
     bottom: 150px;
-    
+    @media ${device.desktop} {
+        height: 150px;
+        bottom: 150px;
+    }
     @media ${device.laptopL} {
         width: 180px;
         bottom: 140px;
@@ -241,9 +270,9 @@ export const ImageLogo = styled.img`
         bottom: 140px;
     }
     @media ${device.tablet} {
-        width: 100px;
+        width: 150px;
         left: 50px;
-        bottom: 120px;
+        bottom: 150px;
     }
     @media ${device.mobileL} {
         width: 100px;
@@ -270,18 +299,21 @@ export const ContentCurrently = styled.div`
     gap: 10px;
     font-size: 1rem;
     width: 400px;
-    @media ${device.desktopS} {
-        width: 400px;
-        margin-right: 100px;
+    @media ${device.desktop} {
+        margin-right: 150px;
+        font-size: 1.3rem;
+        width: 500px;
     }
     @media ${device.laptopL} {
         margin-left: 310px;
     }
     @media ${device.desktopS} {
         margin-left: 310px;
+        width: 400px;
+        margin-right: 100px;
     }
     @media ${device.tablet} {
-        width: 330px;
+        width: 360px;
         font-size: 0.9rem;
         margin-left: 40px;
     }
@@ -292,12 +324,12 @@ export const ContentCurrently = styled.div`
     }
     @media ${device.mobileM} {
        width: 330px;
-       font-size: 0.9rem;
+       font-size: 0.8rem;
        margin-right: 20px;
     }
     @media ${device.mobileS} {
         width: 300px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         margin-right: 20px;
     }
 `
@@ -310,6 +342,16 @@ export const TextCurrently = styled.p`
 export const CurrentlyJob = styled.p`
     color: white;
     display: inline;
+
+    @media ${device.mobileL} {
+        font-size: 0.7rem;
+    }
+    @media ${device.mobileM} {
+        font-size: 0.7rem;
+    }
+    @media ${device.mobileS} {
+        font-size: 0.7rem;
+    }
 `
 
 export const ProjectsContainer = styled.div`
@@ -411,6 +453,10 @@ export const CardGrid = styled.div`
     gap: 20px;
     margin-top: 100px;
     justify-content: center;
+
+    @media ${device.desktop} {
+        margin-left: 910px;
+    }
     @media ${device.laptopL} {
         justify-content: flex-end;
         margin-right: 150px;
@@ -469,10 +515,17 @@ export const ItemListSkills = styled.li`
     padding: 5px;
     color: #abb2bf;
     font-size: 1rem;
+    @media ${device.mobileS} {
+        font-size: 0.9rem;
+    }
 `
 export const ExternalSkillsList = styled.div`
     display: flex;
     flex-direction: column;
+    
+    @media ${device.desktop}{
+        margin-left: 950px;
+    }
 `
 export const PrimaySkillsList = styled.div`
     display: flex;
@@ -486,7 +539,7 @@ export const PrimaySkillsList = styled.div`
         gap: 10px;
     }
     @media ${device.mobileM} {
-        gap: 10px;
+        gap: 3px;
     }
     @media ${device.mobileS} {
         gap: 3px;
@@ -539,13 +592,19 @@ export const AboutTextArea = styled.div`
     width: 100%;
     max-width: 500px;
     color: #abb2bf;
+
+    @media ${device.laptopL} {
+    }
 `
 
 export const ContentManTwo = styled.img`
     margin-left: 160px;
-
+    object-fit: contain;
+    @media ${device.desktop} {
+        margin-left: 1080px;
+    }
     @media ${device.tablet} {
-        width: 400px;
+        width: 300px;
         margin-left: auto;
         font-size: 2rem;
     }
@@ -597,7 +656,7 @@ export const AboutBodyText = styled.p`
     }
     @media ${device.mobileM} {
         font-size: 1rem;
-        width: 360px;
+        width: 350px;
     }
     @media ${device.mobileS} {
         font-size: 1rem;
@@ -628,8 +687,10 @@ export const ContactContainer = styled.div`
 `
 export const SplitContacts = styled.div`
     display: flex;
-    @media ${device.tablet} {
-
+    @media ${device.laptopL} {
+        align-items: center;
+        justify-content:flex-start;
+        gap: 290px;
     }
     @media ${device.mobileL} {
         flex-direction: column;
@@ -685,24 +746,26 @@ export const ContentContacts = styled.div`
     color: #abb2bf;
     border: 1px solid #abb2bf;
     padding: 10px;
-    margin-left: 200px;
+    margin-left: 280px;
     margin-top: 30px;
-
+    @media ${device.desktop} {
+        margin-left: 1100px;
+    }
     @media ${device.laptopL} { 
-        margin-left: 550px;
+        margin-right: 0px;
     }
     @media ${device.tablet} {
         margin-left: auto;
     }
     @media ${device.mobileL} {
-        margin-right: 200px;
+        margin-right: 280px;
     }
     @media ${device.mobileM} {
-        margin-right: 200px;
+        margin-right: 280px;
     }
     @media ${device.mobileS} {
         width: 300px;
-        margin-right: 200px;
+        margin-right: 280px;
     }
 `
 export const ContactContent = styled(Link)`

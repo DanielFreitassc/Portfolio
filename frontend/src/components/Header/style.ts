@@ -48,7 +48,7 @@ export const TabsTitle = styled(Link)`
     text-decoration: none;
     margin-bottom: 81px;
     @media ${device.laptopL} {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     @media ${device.tablet} {
         font-size: 1rem;

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { device } from "../../core/constants/Size";
 
 export const CardContainer = styled.div`
     border: 1px solid #abb2bf;
@@ -45,11 +46,15 @@ export const TextTitle = styled.h2`
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
-
+    @media ${device.tablet} {
+        font-size: 1.3rem;
+    }
 `
 export const TextSubTitle = styled.p`
     font-size: 1rem;
     font-weight: 500;
     color: #abb2bf;
-
+    @media ${device.tablet} {
+        font-size: 0.8rem;
+    }
 `

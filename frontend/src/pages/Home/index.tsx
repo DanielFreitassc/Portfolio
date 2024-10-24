@@ -172,7 +172,7 @@ export const Home = () => {
                             onde sou responsável pela infraestrutura e pelo backend de
                             nossos sites. Tenho um forte interesse
                             na área de DevSecOps.
-                            <AboutLink to={"#"} target="_blank">sobre</AboutLink>
+                            <AboutLink to={"#"}>sobre</AboutLink>
                             </AboutBodyText>
                             
                     </AboutTextArea>

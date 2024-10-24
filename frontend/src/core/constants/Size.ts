@@ -6,7 +6,7 @@ const size = {
     laptop: '1024px',
     desktopS:'1360px',
     laptopL: '1440px',
-    desktop: '2560px'
+    desktop: '1921px'
   }
 
 
