@@ -6,6 +6,9 @@ export const ContainerHome = styled.div`
     background-color: #282c33;
     width: 100%;
     padding: 100px 173px;
+    @media ${device.desktop} {
+        padding: 100px 100px 100px 270px;
+    }
     @media ${device.laptopL} {
         padding: 100px 100px 100px 200px;
     }
@@ -432,12 +435,14 @@ export const LinkToProjects = styled(Link)`
     color: white;
     font-size: 1rem;
     margin-left: 373px;
-
+    @media ${device.desktop} {
+        margin-left: 1300px; 
+    }
     @media ${device.laptopL} {
-        margin-left: 780px; 
+        margin-left: 750px; 
     }
     @media ${device.tablet} {
-        margin-left: 100px;
+        margin-left: 130px;
     }
     @media ${device.mobileL} {
         margin-left: 30px;
@@ -459,12 +464,15 @@ export const CardGrid = styled.div`
 
     @media ${device.desktop} {
         margin-left: 910px;
+        justify-content: flex-end;
     }
     @media ${device.desktopS} {
+        
     }
     @media ${device.laptopL} {
-        justify-content: flex-end;
-        margin-right: 160px;
+        justify-content: flex-end; 
+        max-width: 1440px;
+
     }
     @media ${device.tablet} {
         align-items: center;
@@ -533,13 +541,16 @@ export const ExternalSkillsList = styled.div`
     @media ${device.desktop}{
         margin-left: 950px;
     }
+    @media ${device.laptopL}{
+        justify-content: flex-end;
+
+    }
 `
 export const PrimaySkillsList = styled.div`
     display: flex;
     width: 100%;
     height: 280px;
     gap: 20px;
- 
     @media ${device.tablet} {
         gap: 10px;
     }
