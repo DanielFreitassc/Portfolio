@@ -6,6 +6,11 @@ export const CardContainer = styled.div`
     border: 1px solid #abb2bf;
     width: 320px;
     height: 428px;
+
+    @media ${device.desktop} {
+        height: clamp(100px,35vw,500px);
+        width: clamp(100px,17vw,400px);
+    }
 `
 export const ImageContent = styled.div`
     border: 1px solid #abb2bf;

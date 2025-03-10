@@ -69,13 +69,13 @@ export const Home = () => {
                     <AboutDaniel>
                         <JoinTitle>
                             <ContentTitle>
-                                Daniel é um <StylePurpleInTitle>Dev Backend</StylePurpleInTitle> com Experiência em <StylePurpleInTitle>Infraestrutura</StylePurpleInTitle>
+                                Daniel é um <StylePurpleInTitle>Dev Backend</StylePurpleInTitle> com Experiência na área <StylePurpleInTitle>DevSecOps</StylePurpleInTitle>
                             </ContentTitle>
                         </JoinTitle>
 
                         <AboutSubTitle>
-                            Dedicado, focado em construir APIs de backend escaláveis 
-                            e soluções eficientes.
+                            Dedicado, focado em construir APIs escaláveis 
+                            e soluções seguras.
                         </AboutSubTitle>
                         <ButtonContact to={"#contacts"}>Contate-me!!</ButtonContact>
                     </AboutDaniel>
@@ -88,7 +88,7 @@ export const Home = () => {
                         </ContainerImageMan>
                         <ContentCurrently>
                             <BoxImage src={Box} alt="Caixa decorativa rosa" />
-                            <TextCurrently>Atuamente trabalhando em</TextCurrently><CurrentlyJob>LABTEC/SATC</CurrentlyJob>
+                            <TextCurrently>Atuamente trabalhando em</TextCurrently><CurrentlyJob>CSIRT/SATC</CurrentlyJob>
                         </ContentCurrently>
                     </ContentContainerImageAndCurrently>
                 </ContentAboutAndImage>
@@ -114,8 +114,7 @@ export const Home = () => {
                                     <ListSkills>
                                         <ItemListSkills>Java </ItemListSkills>
                                         <ItemListSkills>Javascript</ItemListSkills>
-                                        <ItemListSkills>Php</ItemListSkills>
-                                        <ItemListSkills>Bash</ItemListSkills>
+                                        <ItemListSkills>Shell script</ItemListSkills>
                                     </ListSkills>
                                 </ContentSkill>
                                 <ContentSkill>
@@ -124,6 +123,7 @@ export const Home = () => {
                                         <ItemListSkills>PostgresSQl</ItemListSkills>
                                         <ItemListSkills>SQLServer</ItemListSkills>
                                         <ItemListSkills>H2 Database</ItemListSkills>
+                                        <ItemListSkills>Mongo DB</ItemListSkills>
                                     </ListSkills>
                                 </ContentSkill>
                                 <ContentSkill>
@@ -168,10 +168,9 @@ export const Home = () => {
                             <AboutBodyText>
                             Sou estudante de Engenharia de Computação e
                             desde muito jovem, tenho um grande interesse
-                            por servidores. Atualmente, trabalho como estagiário na SATC/LABTEC,
-                            onde sou responsável pela infraestrutura e pelo backend de
-                            nossos sites. Tenho um forte interesse
-                            na área de DevSecOps.
+                            por servidores. Atualmente, trabalho como Técnico de segurança da informação no CSIRT/SATC,
+                            onde sou responsável por resposta a incidentes de segurança em sistemas computacionais.
+                            Tenho grande admiração pelo desenvolvimento seguro e busco aplicar essas práticas em todos os meus projetos.
                             <AboutLink to={"#"}>sobre</AboutLink>
                             </AboutBodyText>
                             
@@ -186,12 +185,12 @@ export const Home = () => {
 
                     <SplitContacts>
                         <ContainerContentBodyText>
-                        <ContentBodyText>
-                        Se você tiver interesse em discutir oportunidades ou
-                        precisar de suporte para algum projeto, não hesite em
-                        me contatar. Estou disponível para trabalho freelance e
-                        sempre aberto a novas colaborações.
-                        </ContentBodyText>
+                            <ContentBodyText>
+                            Se você tiver interesse em discutir oportunidades ou
+                            precisar de suporte para algum projeto, não hesite em
+                            me contatar. Estou disponível para trabalho freelance e
+                            sempre aberto a novas colaborações.
+                            </ContentBodyText>
                         </ContainerContentBodyText>
                         <ContentContacts>
                             <TitleContacts> Me envie uma mensagem</TitleContacts>

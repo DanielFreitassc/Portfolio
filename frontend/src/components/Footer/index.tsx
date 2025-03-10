@@ -8,18 +8,18 @@ export const Footer = () => {
             <ContactArea>
                 <DanielName><IconContent><FaDev/></IconContent><NameRightContent>Daniel</NameRightContent></DanielName>
                 <EmailContact>danielfreitassc@gmail.com</EmailContact>
-                <p>Desenvolvedor Backend e DevOps</p>
+                <p>Desenvolvedor Backend e DevSecOps</p>
             </ContactArea>
             <ContactMediaArea>
                 <MediaTitle>Mídias</MediaTitle>
-            <IconsArea>
-                <LinkToSocialMedia to={"https://github.com/DanielFreitassc"} target="_blank"><FaGithub /></LinkToSocialMedia>
-                <LinkToSocialMedia to={"https://www.linkedin.com/in/daniel-freitas-26a8a8267/"} target="_blank"><FaLinkedin /></LinkToSocialMedia>
-                <LinkToSocialMedia to={"https://gitlab.com/DanielFreitassc"} target="_blank"><FaGitlab /></LinkToSocialMedia>
-            </IconsArea>
+                <IconsArea>
+                    <LinkToSocialMedia to={"https://github.com/DanielFreitassc"} target="_blank"><FaGithub /></LinkToSocialMedia>
+                    <LinkToSocialMedia to={"https://www.linkedin.com/in/daniel-freitas-26a8a8267/"} target="_blank"><FaLinkedin /></LinkToSocialMedia>
+                    <LinkToSocialMedia to={"https://gitlab.com/DanielFreitassc"} target="_blank"><FaGitlab /></LinkToSocialMedia>
+                </IconsArea>
             </ContactMediaArea>
             </SplitMediaArea>
-            <Copy>© Copyright 2024. Made by Daniel</Copy>
+            <Copy>© Copyright 2025. Made by Daniel</Copy>
         </FooterContainer>
     )
 }

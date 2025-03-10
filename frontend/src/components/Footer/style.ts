@@ -10,8 +10,11 @@ export const FooterContainer = styled.div`
     height: 210px;
     border-top: 1px solid #abb2bf;
     align-items: center;
+    
+    @media ${device.laptopL} {
+        height: 250px;
+    }
 
-   
     @media ${device.tablet} {
         height: 400px;
     }
@@ -33,9 +36,9 @@ export const SplitMediaArea = styled.div`
     font-weight: 300;
 
     @media ${device.tablet} {
-        align-items: center;
-        flex-direction: column;
+        justify-content: center;
     }
+
     @media ${device.mobileL} {
         align-items: center;
         flex-direction: column;
@@ -52,15 +55,19 @@ export const SplitMediaArea = styled.div`
 export const ContactArea = styled.div`
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: clamp(100px, 30vw, 900px);
     margin: 40px 300px 40px 173px;
+
     @media ${device.laptopL} { 
-        width: 390px;
+        width: clamp(100px, 10vw, 300px);
     }
+    
     @media ${device.tablet} {
         width: 300px;
-        margin: 40px 0px;
+        margin: 40px 100px;
+        justify-content: center;
     }
+
     @media ${device.mobileL} {
         width: 300px;
         margin: 40px 0px;
@@ -103,6 +110,7 @@ export const ContactMediaArea = styled.div`
     }
     @media ${device.tablet} {
         width: 300px;
+        margin: 40px 100px;
     }
     @media ${device.mobileL} {
         width: 300px;
@@ -121,7 +129,6 @@ export const IconsArea = styled.div`
     justify-content: space-around;
     font-size: 1.5rem;
     padding: 5px;
-    
     @media ${device.laptopL} { 
         width: 200px;
         margin-left: 350px;
