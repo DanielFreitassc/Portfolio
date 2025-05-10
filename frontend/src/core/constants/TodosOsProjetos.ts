@@ -3,10 +3,19 @@ import Arq from "../../assets/arquitetura.png"
 import Frotas from "../../assets/frotas.jpg"
 import Market from "../../assets/market.jpg"
 import Reserva from "../../assets/reserve.jpg"
+import EnvVault from "../../assets/envvault.png"
 export const  TodosOsProjeto:IProjeto = {
     projeto:[
-        {    
+          {    
             id:1,
+            image:EnvVault,
+            skill: "Java Springboot H2 Next Docker Nginx",
+            title:"EnvVault",
+            description:"Um software de gerenciamento de variáveis de ambiente...",
+            linkProject:"https://github.com/NextSyntaxDev/EnvVault"
+        },
+        {    
+            id:2,
             image:Reserva,
             skill: "Java Spring PostgreSQL Docker",
             title:"Reserva de Salas",
@@ -14,7 +23,7 @@ export const  TodosOsProjeto:IProjeto = {
             linkProject:"https://github.com/DanielFreitassc/SistemaDeReservasDeSalas"
         },
         {    
-            id:2,
+            id:3,
             image:Frotas,
             skill: "Java Spring PostgreSQL",
             title:"Solução Frotas",
@@ -22,7 +31,7 @@ export const  TodosOsProjeto:IProjeto = {
             linkProject:"https://github.com/DanielFreitassc/SolucaoFrotas"
         },
         {    
-            id:3,
+            id:4,
             image:Arq,
             skill: "Java Spring H2",
             title:"Desafio UOL",
@@ -30,7 +39,7 @@ export const  TodosOsProjeto:IProjeto = {
             linkProject:"https://github.com/DanielFreitassc/desafio-uol"
         },
         {    
-            id:4,
+            id:5,
             image:Market,
             skill: "Java Spring H2",
             title:"Marketplace",
